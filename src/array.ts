@@ -10,3 +10,26 @@ const citizens = ["Shawon", 58, true];
 
 //tuples
 const user: [string, number] = ["Alison", 101];
+
+//testing purpose
+type CompareTwoArrayType = (arrOne: number[], arrTwo: number[]) => number[];
+interface ICompareTwoArray {
+    (arrOne: number[], arrTwo: number[]): number[];
+}
+
+const compareTwoArray: ICompareTwoArray = (arrOne, arrTwo) => {
+    const newArr = [];
+    for (let x of arrOne) {
+        for (let i of arrTwo) {
+            if (x === i) {
+                newArr.push(x)
+            }
+        }
+    }
+    return newArr;
+}
+
+const arrOne = [1, 2, 3, 4, 5];
+const arrTwo = [2, 4, 6, 8];
+
+console.log(compareTwoArray(arrOne, arrTwo))

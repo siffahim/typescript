@@ -6,7 +6,7 @@ type StudentType = {
     address: string
 }
 
-const student1: StudentType = {
+const student0: StudentType = {
     name: "Monica",
     age: 22,
     designation: "Programmer",

@@ -31,4 +31,4 @@ const userData: IUserData = {
     gender: null
 }
 
-const getUser = dataEntryTwo(userData)
+const usersInfo = dataEntryTwo(userData)

@@ -13,8 +13,8 @@ const b: newTypeUsingKeyOf = "address"
 
 
 
-function getProperty<T1, T2 extends keyof T1>(obj: T1, key: T2) {
+function constrainProperty<T1, T2 extends keyof T1>(obj: T1, key: T2) {
     obj[key]
 }
 
-const property = getProperty({ name: "Mr.", age: 25 }, "age")
+const property = constrainProperty({ name: "Mr.", age: 25 }, "age")

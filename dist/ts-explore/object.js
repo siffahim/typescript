@@ -7,3 +7,8 @@ const student = {
     wife: "Alison"
 };
 //student.company = "PH"
+const studentTwo = {
+    institute: "DPI",
+    name: "Halsey",
+    id: 201
+};
